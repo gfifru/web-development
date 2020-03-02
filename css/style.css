@@ -47,6 +47,8 @@ body{font-family:'Lato';}
 .menu ul{display:flex;justify-content:center;align-items:center;}
 .menu__list a{padding:20px;display:block;font-size:14px;font-weight:700;color:#222;line-height:11px;text-transform:uppercase;}
 .menu__list a:hover{color:#888;}
+.menu__list a.active,.menu__list a.active:hover{border-bottom:3px solid #ef5b70;padding:20px 20px 17px;color:#222;}
+.menu__list a:hover{border-bottom:3px solid #888;padding:20px 20px 17px;}
 
 /* PROMO */
 .promo{height:614px;background: url(../img/promo.png) no-repeat center -51px;}
