@@ -103,14 +103,14 @@ a.btn:after{content: url(../img/arrow2.png);padding-left:8px;position:relative;t
 /* SUBSCRIBE */
 .subscribe{background: url(../img/subscribe.png) no-repeat center center;height:438px;}
 .subscribe__content{padding-top:100px;display:flex;justify-content:space-between;}
-.l_sub{display:flex;}
+.reviews_box{display:flex;}
 .r_user_img{width: 83px;height: 83px;}
 .reviews{padding-left:30px;width:450px;}
 .reviews_user_text{font-size:16px;font-style:italic;color:#222;letter-spacing:.03em;line-height:26px;margin-bottom:10px;}
 .reviews_user_name,.reviews_user_city{display:block;}
 .reviews_user_name{font-size:16px;font-weight:700;color: #f16d7f;letter-spacing:.03em;}
 .reviews_user_city{font-size:12px;font-weight:300;color:#222;letter-spacing:.03em;}
-.reviews_nav{margin-top:40px;}
+.reviews_nav{margin-top:40px;padding-left:113px;}
 .reviews_nav a{display:inline-block;margin-right:13px;padding-top:5px;padding-bottom:5px;}
 .reviews_nav a span{display:block;width:38px;height:4px;background:#fff;}
 .reviews_nav a:hover span{background:#f16d7f;}
