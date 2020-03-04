@@ -215,5 +215,25 @@ a.btn.white:hover:before{content: url(../img/cart_white.png);}
 .item_box .ii_choose span i{font-weight:300;color:#6f6e6e;}
 .item_box,.i_quantity{font-size:13px;color:#656565;align-self:center;}
 .i_quantity{width:54px;height:30px;padding-left:5px;padding-right:5px;border:1px solid #eaeaea;text-align:center;}
-
 .title_box.p_details,.item_box.i_info{width:540px;text-align:left;}
+.cart_nav{display: flex; justify-content: space-between;}
+.cart_nav a{display: block;font-size:14px;font-weight:700;color:#4a4a4a;text-transform:uppercase;}
+.btn.cart_nav__btn{background:#fff;padding:20px 38px;border: 1px solid #4a4a4a;line-height:8px;letter-spacing: inherit;}
+.btn.cart_nav__btn:after{content:none;}
+.btn.cart_nav__btn:hover{background:#eaeaea;border:1px solid #cacaca;}
+.cart_info{margin-top:60px;display:flex;justify-content:space-between;padding-bottom:80px;}
+.cart_info__box{width:355px;}
+.ci_title{font-size:16px;font-weight:bold;color:#222;text-transform:uppercase;margin-bottom:22px;line-height:12px;}
+.cart_info select,.cart_info input,.cart_info option{display:block;width:100%;padding:16px;font-size:13px;font-weight:300;color:#b1b1b1;border:1px solid #eaeaea;margin-bottom:20px;}
+.cart_info select{height: 45px;}
+.sm_btn{font-size:11px;font-weight:700;color: #4a4a4a;text-transform: uppercase;padding:12px 14px;display:inline-block;background:#fff;border: 1px solid #4a4a4a;line-height:8px;}
+.sm_btn:hover{background:#eaeaea;border:1px solid #cacaca;}
+.cart_info__box p{font-size: 14px;font-weight: 300;color: #000000;margin-bottom:24px;}
+.ci_box{background:#f5f3f3;padding:40px;}
+.ci_box div{text-align:right;}
+.s_total{font-size:11px;color:#4a4a4a;text-transform:uppercase;}
+.s_total i{margin-left:8px;}
+.g_total{padding-top:14px;font-size: 16px;font-weight: 700;color: #222;text-transform: uppercase;padding-bottom:22px;border-bottom:1px solid #e2e2e2; margin-bottom: 17px;}
+.g_total i{margin-left:8px;color: #f16d7f;}
+a.ci_btn{display:block;padding:0;line-height:50px;text-align:center;}
+a.ci_btn:after{content:none;}
