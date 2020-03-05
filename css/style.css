@@ -98,7 +98,7 @@ a.btn:after{content: url(../img/arrow2.png);padding-left:8px;position:relative;t
 .offer__text h5{font-size:32px;font-weight:700;color:#fff;letter-spacing:.03em;line-height: 26px;margin-top: 14px;}
 .r_col article{display:flex;flex-grow:1;}
 .article__ico{padding-left:36px;padding-top:40px;}
-.article__content{padding-top:40px;padding-right: 36px;padding-left:30px;}
+.article__content{padding-top:40px;padding-right:36px;padding-left:30px;}
 .article__content h4{font-size:20px;font-weight:700;color:#fbfbfb;letter-spacing:.03em;line-height:16px;margin-bottom:16px;}
 .article__content p{font-size:14px;font-weight:300;color:#fbfbfb;letter-spacing:.03em;line-height:24px;}
 
@@ -237,3 +237,36 @@ a.btn.white:hover:before{content: url(../img/cart_white.png);}
 .g_total i{margin-left:8px;color: #f16d7f;}
 a.ci_btn{display:block;padding:0;line-height:50px;text-align:center;}
 a.ci_btn:after{content:none;}
+
+/* ADVANTAGE */
+
+.advantage{background:#222;}
+.advantage__inner{display:flex;justify-content:space-between;}
+.adv_col{width:380px;text-align:center;padding-top: 90px;padding-bottom:115px;}
+.adv_col .article__ico img{width:auto;height:32px;}
+.article__ico{padding:0;}
+.adv_col article{padding-left:30px;padding-right:30px;}
+.adv_col .article__content{padding-top:40px;padding-left: 0;padding-right: 0;}
+
+/* CATALOG ITEMS */
+
+.catalog_items{padding-top:60px;padding-bottom:110px;display:flex;justify-content:space-between;}
+
+.catalog_items__nav{width:265px;margin-right:50px;}
+.catalog_items__content{width:100%;}
+
+.c_menu>ul>li{margin-bottom:18px;}
+
+.c_menu__link{font-size:14px;font-weight:700;color:#6f6e6e;line-height:20px;text-transform:uppercase;display:block;padding-top:14px;padding-bottom:14px;padding-left:10px;border-left:5px solid #ef5b70;border-bottom:1px solid #ebebeb;padding-right:10px;}
+.c_menu__link i{float:right;font-size:18px;}
+
+.c_menu__link.active{color:#ef5b70;}
+.c_menu__link.active i{color:#ef5b70;}
+
+
+.c_menu__link:hover{background:#f7f7f7;}
+
+.c_menu__link.active .c_menu__drop{display:block;}
+.c_menu__drop{padding-top:10px;padding-left:16px;}
+.cm_link{display:block;font-size: 14px;color: #6f6e6e;line-height:12px;padding-top:10px;padding-bottom:10px;}
+.cm_link:hover{color:#ef5b70}
