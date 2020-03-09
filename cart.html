@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Корзина</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9620274c87.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,12 +27,12 @@
     <nav class="menu width">
         <ul>
             <li class="menu__list"><a href="index.html">Home</a></li>
-            <li class="menu__list"><a href="">Man</a></li>
-            <li class="menu__list"><a href="">Women</a></li>
-            <li class="menu__list"><a href="">Kids</a></li>
-            <li class="menu__list"><a href="">Accoseriese</a></li>
-            <li class="menu__list"><a href="">Featured</a></li>
-            <li class="menu__list"><a href="">Hot Deals</a></li>
+            <li class="menu__list"><a href="item.html">Man</a></li>
+            <li class="menu__list"><a href="item.html">Women</a></li>
+            <li class="menu__list"><a href="item.html">Kids</a></li>
+            <li class="menu__list"><a href="item.html">Accoseriese</a></li>
+            <li class="menu__list"><a href="item.html">Featured</a></li>
+            <li class="menu__list"><a href="item.html">Hot Deals</a></li>
         </ul>
     </nav>
 
@@ -43,7 +44,7 @@
                 </div>
                 <nav class="l_br_col">
                     <ul class="br_list">
-                        <li><a href="#">Home</a></li><li><a href="#">Men</a></li><li><a class="active" href="#">New Arrivals</a></li>
+                        <li><a href="index.html">Home</a></li><li><a href="item.html">Men</a></li><li><a class="active" href="#">New Arrivals</a></li>
                     </ul>
                 </nav>
             </div>
@@ -66,9 +67,9 @@
                 <div class="cart_items__list">
                     <div class="cart_items__item">
                         <div class="item_box i_info">
-                            <img class="item_preview" src="img/cart_img.png" alt="item name">
+                            <a href="item.html"><img class="item_preview" src="img/cart_img.png" alt="item name"></a>
                             <div class="item_info">
-                                <div class="ii_name">Mango People T-shirt</div>
+                                <div class="ii_name"><a href="item.html">Mango People T-shirt</a></div>
                                 <div class="ii_choose">
                                     <span>Color: <i>red</i></span>
                                     <span>Size: <i>M</i></span>
@@ -76,16 +77,16 @@
                             </div>
                         </div>
                         <div class="item_box">$150</div>
-                        <div class="item_box"><input class="i_quantity" type="text"></div>
+                        <div class="item_box"><input class="i_quantity" type="number" min="1" value="1" required></div>
                         <div class="item_box">FREE</div>
                         <div class="item_box">$300</div>
-                        <div class="item_box"><a href="#"><img src="img/item_delete.png" alt="item delete"></a></div>
+                        <div class="item_box"><a class="i_delete" href="#"><i class="fas fa-trash-alt"></i></a></div>
                     </div>
                     <div class="cart_items__item">
                         <div class="item_box i_info">
-                            <img class="item_preview" src="img/cart_img.png" alt="item name">
+                            <a href="item.html"><img class="item_preview" src="img/cart_img.png" alt="item name"></a>
                             <div class="item_info">
-                                <div class="ii_name">Mango People T-shirt</div>
+                                <div class="ii_name"><a href="item.html">Mango People T-shirt</a></div>
                                 <div class="ii_choose">
                                     <span>Color: <i>red</i></span>
                                     <span>Size: <i>M</i></span>
@@ -93,16 +94,16 @@
                             </div>
                         </div>
                         <div class="item_box">$150</div>
-                        <div class="item_box"><input class="i_quantity" type="text"></div>
+                        <div class="item_box"><input class="i_quantity" type="number" min="1" value="1" required></div>
                         <div class="item_box">FREE</div>
                         <div class="item_box">$300</div>
-                        <div class="item_box"><a href="#"><img src="img/item_delete.png" alt="item delete"></a></div>
+                        <div class="item_box"><a class="i_delete" href="#"><i class="fas fa-trash-alt"></i></a></div>
                     </div>
                     <div class="cart_items__item">
                         <div class="item_box i_info">
-                            <img class="item_preview" src="img/cart_img.png" alt="item name">
+                            <a href="item.html"><img class="item_preview" src="img/cart_img.png" alt="item name"></a>
                             <div class="item_info">
-                                <div class="ii_name">Mango People T-shirt</div>
+                                <div class="ii_name"><a href="item.html">Mango People T-shirt</a></div>
                                 <div class="ii_choose">
                                     <span>Color: <i>red</i></span>
                                     <span>Size: <i>M</i></span>
@@ -110,10 +111,10 @@
                             </div>
                         </div>
                         <div class="item_box">$150</div>
-                        <div class="item_box"><input class="i_quantity" type="text"></div>
+                        <div class="item_box"><input class="i_quantity" type="number" min="1" value="1" required></div>
                         <div class="item_box">FREE</div>
                         <div class="item_box">$300</div>
-                        <div class="item_box"><a href="#"><img src="img/item_delete.png" alt="item delete"></a></div>
+                        <div class="item_box"><a class="i_delete" href="#"><i class="fas fa-trash-alt"></i></a></div>
                     </div>
                 </div>
             </div>
