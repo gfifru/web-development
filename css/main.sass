@@ -102,6 +102,7 @@ body
         background: #fff
         top: 36px
         left: 0
+        z-index: 10
         padding: 0 15px 20px
         display: none
         box-shadow: 0 2px 2px 0 rgba(0,0,0,.15)
@@ -150,6 +151,7 @@ body
         left: 0
         padding: 20px 15px
         display: none
+        z-index: 20
         box-shadow: 0 2px 2px 0 rgba(0,0,0,.15)
         border-bottom-right-radius: 7px
         border-bottom-left-radius: 7px
@@ -229,8 +231,6 @@ body
                         color: #fff
 .header__right .hr_drop:hover .drop
     display: block
-
-
 .header__right .a_link
     background-color: $color-pink
     border: 1px solid $color-pink
@@ -268,16 +268,12 @@ body
 /* NAV */
 .menu
     height: 51px
-
-
-.menu ul
+.menu .main_menu
     display: flex
     justify-content: center
     align-items: center
-
-
-.menu__list a
-
+    position: relative
+.menu__list .ml_link
     padding: 20px
     display: block
     font-size: 14px
@@ -285,38 +281,70 @@ body
     color: #222
     line-height: 11px
     text-transform: uppercase
-
-
-.menu__list a:hover
+.menu__list .ml_link:hover
     color: #888
-
-
-.menu__list a.active,.menu__list a.active:hover
+.menu__list .ml_link.active,
+.menu__list .ml_link.active:hover
     border-bottom: 3px solid #ef5b70
     padding: 20px 20px 17px
     color: #222
-
-
-.menu__list a:hover
-    border-bottom: 3px solid #888
+.menu__list .ml_link:hover
+    border-bottom: 3px solid #fff
     padding: 20px 20px 17px
-
-
-
+.menu__list .drop
+    position: absolute
+    background: #fff
+    top: 51px
+    left: 0
+    right: 0
+    padding: 0 20px 15px
+    display: none
+    z-index: 6
+    justify-content: space-between
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.15)
+    border-bottom-right-radius: 7px
+    border-bottom-left-radius: 7px
+    &__col
+        flex-grow: 1
+        width: 234px
+        padding-right: 40px
+        & .col_title
+            font-size: 14px
+            color: #232323
+            letter-spacing: 0.03em
+            line-height: 14px
+            padding-bottom: 8px
+            margin-top: 20px
+            text-transform: uppercase
+            border-bottom: 1px solid #eaeaea
+        & .col_banner
+            margin-top: 20px
+            & img
+                width: 100%
+                height: auto
+        & .col_menu
+            padding-top: 10px
+            & li a
+                display:block
+                font-size: 14px
+                color: #646464
+                letter-spacing: 0.03em
+                line-height: 28px
+                &:hover
+                    text-decoration: underline
+    &__col:last-of-type
+        padding-right: 0
+.menu__list:hover .drop
+    display: flex
 /* PROMO */
 .promo
     height: 614px
     background:  url(../img/promo.png) no-repeat center -51px
-
-
 .promo__content
     padding-top: 225px
-
-
 .promo__content hgroup
     padding-left: 12px
     border-left: 12px solid #f16d7f
-
 .promo__h1
     font-size: 60px
     font-weight: 900
@@ -324,66 +352,54 @@ body
     letter-spacing: .03em
     line-height: 43px
     margin-bottom: 18px
-
 .promo__h2
     font-size: 40px
     font-weight: 900
     color: #222
     letter-spacing: .03em
     line-height: 31px
-
 .promo__h2 span
     color: #f16d7f
-
 /* MAIN BANNERS */
 .main_banners
     display: flex
     padding-top: 100px
     padding-bottom: 100px
     justify-content: space-between
-
 .lb_man
     background:  url(../img/for_men.png) no-repeat
     height: 542px
     width: 560px
-
 .lb_accesories
     background:  url(../img/accesories.png) no-repeat
     height: 261px
     width: 560px
     margin-top: 20px
-
 .lb_women
     background:  url(../img/for_women.png) no-repeat
     height: 261px
     width: 560px
-
 .lb_kids
     background:  url(../img/for_kids.png) no-repeat
     height: 542px
     width: 560px
     margin-top: 20px
-
 .lb__title
     padding: 16px 20px
     background: #fff
     margin-top: 26px
     float: left
-
 .lb__title h4,
 .lb__title h5
     text-transform: uppercase
     font-weight: 900
     letter-spacing: .03em
-
 .lb__title h4
     font-size: 18px
     color: #222
-
 .lb__title h5
     font-size: 30px
     color: #f16d7f
-
 /* FETURED ITEMS */
 .fi_top h3
     font-size: 30px
@@ -393,38 +409,30 @@ body
     letter-spacing: .03em
     line-height: 26px
     margin-bottom: 16px
-
 .fi_top h4
     font-size: 14px
     color: #9f9f9f
     text-align: center
     letter-spacing: .03em
     line-height: 14px
-
 .fi_list
     padding-top: 60px
     display: flex
     justify-content: space-around
     flex-wrap: wrap
-
 .fi__item
     width: 261px
     display: block
     height: 369px
     margin-bottom: 30px
-
 .fi__image
     position: relative
     height: 280px
-
-
 .fi__img
     height: 280px
     width: 261px
     position: absolute
     z-index: 1
-
-
 .fi__img_hover
     height: 280px
     width: 261px
@@ -432,8 +440,6 @@ body
     position: absolute
     z-index: 2
     display: none
-
-
 .fi__item:hover .fi__img_hover
     height: 280px
     width: 261px
@@ -441,8 +447,6 @@ body
     position: absolute
     z-index: 2
     display: block
-
-
 .fi__add
     font-size: 13px
     font-weight: 700
@@ -452,23 +456,15 @@ body
     width: 125px
     margin: 95px auto 0
     line-height: 44px
-
-
 .fi__add:hover
     box-shadow: 0 0 3px 3px rgba(255,255,255,.5)
-
-
 .fi__add img
     margin-right: 8px
     margin-right: 8px
     position: relative
     top: 5px
-
-
 .fi__item:hover
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.15)
-
-
 .fi__item_name
     font-size: 13px
     color: #222
@@ -476,8 +472,6 @@ body
     margin-top: 19px
     padding: 0 14px
     line-height: 15px
-
-
 .fi__item_price
     font-size: 16px
     font-weight: 700
@@ -485,13 +479,9 @@ body
     margin-top: 17px
     padding: 0 14px
     line-height: 16px
-
-
 .row_btn
     text-align: center
     padding-top: 20px
-
-
 a.btn
     background: $color-pink
     border: 1px solid $color-pink
@@ -1440,24 +1430,13 @@ a.ci_btn:after
     padding-bottom: 110px
     display: flex
     justify-content: space-between
-
-
-
 .catalog_items__nav
     width: 265px
     margin-right: 50px
-
-
 .catalog_items__content
     width: 100%
-
-
-
 .c_menu>ul>li
     margin-bottom: 18px
-
-
-
 .c_menu__link
     font-size: 14px
     font-weight: 700
@@ -1471,38 +1450,20 @@ a.ci_btn:after
     border-left: 5px solid #ef5b70
     border-bottom: 1px solid #ebebeb
     padding-right: 10px
-
-
 .c_menu__link i
     float: right
     font-size: 18px
-
-
-
 .c_menu__link.active
     color: #ef5b70
-
-
 .c_menu__link.active i
     color: #ef5b70
-
-
-
-
 .c_menu__link:hover
     background: #f7f7f7
-
-
-
 .c_menu__link.active .c_menu__drop
     display: block
-
-
 .c_menu__drop
     padding-top: 10px
     padding-left: 16px
-
-
 .cm_link
     display: block
     font-size:  14px
@@ -1510,7 +1471,107 @@ a.ci_btn:after
     line-height: 12px
     padding-top: 10px
     padding-bottom: 10px
-
-
 .cm_link:hover
     color: #ef5b70
+
+.content_filter_1
+    display: flex
+    justify-content: space-between
+    & .filter_col
+        width: calc(100%/3)
+        & .fc_title
+            font-size: 14px
+            font-weight: 700
+            color: #6f6e6e
+            line-height: 20px
+            text-transform: uppercase
+            margin-bottom: 25px
+        & .trending_list
+            & div
+                font-size: 14px
+                color: #dfdfdf
+                line-height: 26px
+                & a
+                    color: #6f6e6e
+                    &:hover
+                        text-decoration: underline
+        & .size_list
+            list-style: none
+            & .sl_item
+                font-size: 14px
+                color: #6f6e6e
+                line-height: 20px
+                text-transform: uppercase
+                display: inline-block
+                margin-right: 25px
+                margin-bottom: 5px
+                & label
+                    margin-left: 8px
+                    position: relative
+                    top: 1px
+        & .price_list input
+            width: 100%
+        & .price_list .p_max_min
+            display: flex
+            justify-content: space-between
+            margin-top: 6px
+            & span
+                font-size: 14px
+                color: #6f6e6e
+                line-height: 26px
+            & .p_max
+                text-align: right
+.content_filter_2
+    height: 50px
+    background: #f3f3f3
+    margin-top: 40px
+    padding-left: 10px
+    & .sort_list
+        list-style: none
+        padding-top: 10px
+        & li
+            display: inline-block
+            height: 30px
+            line-height: 26px
+            background: #ffffff
+            border: 1px solid #ebebeb
+            & span
+                padding-left: 10px
+                padding-right: 10px
+                font-size: 14px
+                color: #6f6e6e
+                border-right: 1px solid #ebebeb
+            & select
+                float: right
+                height: 28px
+                margin-left: 10px
+        & .s_show
+            margin-left: 10px
+
+
+.pagination
+    display: flex
+    justify-content: space-between
+    & .pag_list
+        list-style: none
+        border: 1px solid #ebebeb
+        border-radius: 3px
+        & li
+            display: inline-block
+            & a
+                line-height: 44px
+                display: block
+                padding-left: 15px
+                padding-right: 15px
+                color: #c4c4c4
+                &.active,
+                &:hover
+                    color: $color-pink
+a.btn.white.b_pag
+    margin: 0
+    padding-left: 45px
+    padding-right: 45px
+    border-radius: 3px
+    line-height: 44px
+a.btn.white.b_pag:before
+    content: none

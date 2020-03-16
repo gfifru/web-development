@@ -87,14 +87,56 @@
     </header>
 
     <nav class="menu width">
-        <ul>
-            <li class="menu__list"><a href="index.html">Home</a></li>
-            <li class="menu__list"><a class="active" href="item.html">Man</a></li>
-            <li class="menu__list"><a href="item.html">Women</a></li>
-            <li class="menu__list"><a href="item.html">Kids</a></li>
-            <li class="menu__list"><a href="item.html">Accoseriese</a></li>
-            <li class="menu__list"><a href="item.html">Featured</a></li>
-            <li class="menu__list"><a href="item.html">Hot Deals</a></li>
+        <ul class="main_menu">
+            <li class="menu__list"><a class="ml_link" href="index.html">Home</a></li>
+            <li class="menu__list"><a class="ml_link active" href="item.html">Man</a></li>
+            <li class="menu__list"><a class="ml_link" href="item.html">Women</a>
+                <div class="drop">
+                    <div class="drop__col">
+                        <h3 class="col_title">Woman</h3>
+                        <ul class="col_menu">
+                            <li><a href="#">Dresses</a></li>
+                            <li><a href="#">Tops</a></li>
+                            <li><a href="#">Sweaters/Knits</a></li>
+                            <li><a href="#">Jackets/Coats</a></li>
+                            <li><a href="#">Blazers</a></li>
+                            <li><a href="#">Denim</a></li>
+                            <li><a href="#">Leggings/Pants</a></li>
+                            <li><a href="#">Skirts/Shorts</a></li>
+                            <li><a href="#">Accessories </a></li>
+                        </ul>
+                    </div>
+                    <div class="drop__col">
+                        <h3 class="col_title">Woman</h3>
+                        <ul class="col_menu">
+                            <li><a href="#">Dresses</a></li>
+                            <li><a href="#">Tops</a></li>
+                            <li><a href="#">Sweaters/Knits</a></li>
+                            <li><a href="#">Jackets/Coats</a></li>
+                        </ul>
+                        <h3 class="col_title">Woman</h3>
+                        <ul class="col_menu">
+                            <li><a href="#">Dresses</a></li>
+                            <li><a href="#">Tops</a></li>
+                            <li><a href="#">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop__col">
+                        <h3 class="col_title">Woman</h3>
+                        <ul class="col_menu">
+                            <li><a href="#">Dresses</a></li>
+                            <li><a href="#">Tops</a></li>
+                            <li><a href="#">Sweaters/Knits</a></li>
+                            <li><a href="#">Jackets/Coats</a></li>
+                        </ul>
+                        <div class="col_banner"><a href="#"><img src="img/drop_img.png" alt="drop img"></a></div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu__list"><a class="ml_link" href="item.html">Kids</a></li>
+            <li class="menu__list"><a class="ml_link" href="item.html">Accoseriese</a></li>
+            <li class="menu__list"><a class="ml_link" href="item.html">Featured</a></li>
+            <li class="menu__list"><a class="ml_link" href="item.html">Hot Deals</a></li>
         </ul>
     </nav>
 
@@ -139,7 +181,167 @@
                 </ul>
             </nav>
         </aside>
-        <div class="catalog_items__content">2</div>
+        <div class="catalog_items__content">
+            <div class="content_filter_1">
+                <div class="filter_col">
+                    <div class="fc_title">Trending now</div>
+                    <div class="trending_list">
+                        <div><a href="#">Bohemian</a> | <a href="#">Floral</a> | <a href="#">Lace</a></div>
+                        <div><a href="#">Floral</a> | <a href="#">Lace</a> | <a href="#">Bohemian</a></div>
+                    </div>
+                </div>
+                <div class="filter_col">
+                    <div class="fc_title">Size</div>
+                    <ul class="size_list">
+                        <li class="sl_item"><input type="checkbox" class="checkbox" id="checkbox" /><label for="checkbox">XXS</label></li>
+                        <li class="sl_item"><input type="checkbox" class="checkbox" id="checkbox" /><label for="checkbox">XS</label></li>
+                        <li class="sl_item"><input type="checkbox" class="checkbox" id="checkbox" /><label for="checkbox">S</label></li>
+                        <li class="sl_item"><input type="checkbox" class="checkbox" id="checkbox" /><label for="checkbox">M</label></li>
+                        <li class="sl_item"><input type="checkbox" class="checkbox" id="checkbox" /><label for="checkbox">L</label></li>
+                        <li class="sl_item"><input type="checkbox" class="checkbox" id="checkbox" /><label for="checkbox">XL</label></li>
+                        <li class="sl_item"><input type="checkbox" class="checkbox" id="checkbox" /><label for="checkbox">XXL</label></li>
+                    </ul>
+                </div>
+                <div class="filter_col">
+                    <div class="fc_title">Price</div>
+                    <div class="price_list">
+                        <input type="range" min="0" max="100" step="1" value="50">
+                        <div class="p_max_min">
+                            <span class="p_min">$24</span>
+                            <span class="p_max">$400</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_filter_2">
+                <ul class="sort_list">
+                    <li class="s_by">
+                        <span>Sort By</span>
+                        <select name="" id="">
+                            <option value="red">Name</option>
+                            <option value="red">Price</option>
+                            <option value="red">Popular</option>
+                        </select>
+                    </li>
+                    <li class="s_show">
+                        <span>Show</span>
+                        <select name="" id="">
+                            <option value="red">3</option>
+                            <option value="red">6</option>
+                            <option value="red">9</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_items_list">
+                <div class="fi_list">
+                    <a class="fi__item" href="#">
+                        <div class="fi__image">
+                            <img class="fi__img" src="img/item1.png" alt="item1">
+                            <div class="fi__img_hover">
+                                <div class="fi__add"><img src="img/cart_white.png" alt="cart add">Add to Cart</div>
+                            </div>
+                        </div>
+                        <h4 class="fi__item_name">Mango People T-shirt</h4>
+                        <div class="fi__item_price">$52.00</div>
+                    </a>
+                    <a class="fi__item" href="#">
+                        <div class="fi__image">
+                            <img class="fi__img" src="img/item2.png" alt="item1">
+                            <div class="fi__img_hover">
+                                <div class="fi__add"><img src="img/cart_white.png" alt="cart add">Add to Cart</div>
+                            </div>
+                        </div>
+                        <h4 class="fi__item_name">Mango People T-shirt</h4>
+                        <div class="fi__item_price">$52.00</div>
+                    </a>
+                    <a class="fi__item" href="#">
+                        <div class="fi__image">
+                            <img class="fi__img" src="img/item3.png" alt="item1">
+                            <div class="fi__img_hover">
+                                <div class="fi__add"><img src="img/cart_white.png" alt="cart add">Add to Cart</div>
+                            </div>
+                        </div>
+                        <h4 class="fi__item_name">Mango People T-shirt</h4>
+                        <div class="fi__item_price">$52.00</div>
+                    </a>
+                    <a class="fi__item" href="#">
+                        <div class="fi__image">
+                            <img class="fi__img" src="img/item4.png" alt="item1">
+                            <div class="fi__img_hover">
+                                <div class="fi__add"><img src="img/cart_white.png" alt="cart add">Add to Cart</div>
+                            </div>
+                        </div>
+                        <h4 class="fi__item_name">Mango People T-shirt</h4>
+                        <div class="fi__item_price">$52.00</div>
+                    </a>
+                    <a class="fi__item" href="#">
+                        <div class="fi__image">
+                            <img class="fi__img" src="img/item5.png" alt="item1">
+                            <div class="fi__img_hover">
+                                <div class="fi__add"><img src="img/cart_white.png" alt="cart add">Add to Cart</div>
+                            </div>
+                        </div>
+                        <h4 class="fi__item_name">Mango People T-shirt</h4>
+                        <div class="fi__item_price">$52.00</div>
+                    </a>
+                    <a class="fi__item" href="#">
+                        <div class="fi__image">
+                            <img class="fi__img" src="img/item6.png" alt="item1">
+                            <div class="fi__img_hover">
+                                <div class="fi__add"><img src="img/cart_white.png" alt="cart add">Add to Cart</div>
+                            </div>
+                        </div>
+                        <h4 class="fi__item_name">Mango People T-shirt</h4>
+                        <div class="fi__item_price">$52.00</div>
+                    </a>
+                    <a class="fi__item" href="#">
+                        <div class="fi__image">
+                            <img class="fi__img" src="img/item7.png" alt="item1">
+                            <div class="fi__img_hover">
+                                <div class="fi__add"><img src="img/cart_white.png" alt="cart add">Add to Cart</div>
+                            </div>
+                        </div>
+                        <h4 class="fi__item_name">Mango People T-shirt</h4>
+                        <div class="fi__item_price">$52.00</div>
+                    </a>
+                    <a class="fi__item" href="#">
+                        <div class="fi__image">
+                            <img class="fi__img" src="img/item8.png" alt="item1">
+                            <div class="fi__img_hover">
+                                <div class="fi__add"><img src="img/cart_white.png" alt="cart add">Add to Cart</div>
+                            </div>
+                        </div>
+                        <h4 class="fi__item_name">Mango People T-shirt</h4>
+                        <div class="fi__item_price">$52.00</div>
+                    </a>
+                    <a class="fi__item" href="#">
+                        <div class="fi__image">
+                            <img class="fi__img" src="img/item4.png" alt="item1">
+                            <div class="fi__img_hover">
+                                <div class="fi__add"><img src="img/cart_white.png" alt="cart add">Add to Cart</div>
+                            </div>
+                        </div>
+                        <h4 class="fi__item_name">Mango People T-shirt</h4>
+                        <div class="fi__item_price">$52.00</div>
+                    </a>
+                </div>
+                <div class="pagination">
+                    <ul class="pag_list">
+                        <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">20</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                    </ul>
+                    <a class="btn white b_pag" href="#">View All</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="advantage">
