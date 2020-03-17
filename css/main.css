@@ -1957,4 +1957,134 @@ a.btn.white.b_pag {
 a.btn.white.b_pag:before {
   content: none;
 }
+
+/* CHECKOUT */
+.checkout {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.checkout__steps .step_col {
+  border-top: 1px solid #e8e8e8;
+  overflow: hidden;
+  clear: both;
+}
+
+.checkout__steps .step_col_title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  width: 100%;
+}
+
+.checkout__steps .step_col_left {
+  width: 50%;
+  float: left;
+}
+
+.checkout__steps .step_col_right {
+  width: 50%;
+  float: left;
+}
+
+.checkout__steps .step_col .sc_name {
+  font-size: 13px;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  line-height: 11px;
+}
+
+.checkout__steps .step_col .sc_name_info {
+  font-size: 13px;
+  color: #b3b2b2;
+  line-height: 20px;
+  margin-bottom: 28px;
+  line-height: 11px;
+}
+
+.checkout__steps .step_col .sc_link a {
+  font-size: 13px;
+  color: #b3b2b2;
+  line-height: 11px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.checkout__steps .step_col .sc_link a:hover {
+  color: #222;
+}
+
+.checkout__steps .step_col .sc_radio {
+  padding-bottom: 10px;
+}
+
+.checkout__steps .step_col .sc_radio .radio {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.checkout__steps .step_col .sc_radio .radio input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.checkout__steps .step_col .sc_radio .radio .radio__text {
+  position: relative;
+  padding-left: 28px;
+  font-size: 12px;
+  color: #222;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.checkout__steps .step_col .sc_radio .radio .radio__text:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.checkout__steps .step_col .sc_radio .radio .radio__text:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.checkout__steps .step_col .sc_radio .radio input:checked + .radio__text:after {
+  opacity: 1;
+}
+
+.checkout__steps .step_col .sc_radio .radio input:focus + .radio__text:before {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 0, 0.7);
+          box-shadow: 0 0 0 3px rgba(255, 255, 0, 0.7);
+}
+
+.checkout__steps .step_col:last-of-type {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.checkout__steps .step_col.active {
+  padding-bottom: 80px;
+}
 /*# sourceMappingURL=main.css.map */
