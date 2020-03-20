@@ -2080,6 +2080,78 @@ a.btn.white.b_pag:before {
           box-shadow: 0 0 0 3px rgba(255, 255, 0, 0.7);
 }
 
+.checkout__steps .step_col .sc_btn {
+  padding-top: 38px;
+}
+
+.checkout__steps .step_col .btn_white {
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  line-height: 50px;
+  width: 180px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4a4a4a;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.checkout__steps .step_col .btn_white:hover {
+  background: #4a4a4a;
+  border: 1p solid #4a4a4a;
+  color: #fff;
+}
+
+.checkout__steps .step_col .sc_form .sc_warning {
+  color: #ff0d0d;
+  font-size: 13px;
+  font-style: normal;
+  display: block;
+  line-height: 19px;
+}
+
+.checkout__steps .step_col .sc_form label {
+  font-size: 12px;
+  color: #222;
+  line-height: 20px;
+  display: block;
+}
+
+.checkout__steps .step_col .sc_form label i {
+  color: #ff0d0d;
+  font-size: 17px;
+}
+
+.checkout__steps .step_col .sc_form input {
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 390px;
+  border: 1px solid #eaeaea;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 12px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.checkout__steps .step_col .sc_form .sc_link {
+  font-size: 14px;
+  color: #222222;
+  line-height: 20px;
+  margin-left: 32px;
+}
+
+.checkout__steps .step_col .sc_form .sc_link:hover {
+  text-decoration: underline;
+}
+
 .checkout__steps .step_col:last-of-type {
   border-bottom: 1px solid #e8e8e8;
 }
